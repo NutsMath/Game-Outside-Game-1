@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Outside Game I</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        #result {
+            margin-top: 10px;
+        }
+        .correct {
+            color: green;
+        }
+        .incorrect {
+            color: red;
+        }
+        .summary {
+            color: blue;
+        }
+        /* จัดการสไตล์ของรูปภาพ */
+        #levelImage {
+            display: block;
+            margin: 20px auto; /* เว้นระยะห่างบนและล่างของรูปภาพ */
+            width: 200px; /* ปรับขนาดรูปภาพตามต้องการ */
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Game Outside Game I</h1>
+    <div id="levelContainer">
+        <p id="levelText"></p>
+        <img id="levelImage" src="" alt="Image for level" style="display: none;">
+        <input type="text" id="passwordInput" placeholder="กรอกรหัสผ่าน">
+        <button id="checkButton">ตรวจสอบ</button>
+        <p id="result"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
